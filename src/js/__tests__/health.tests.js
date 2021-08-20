@@ -13,5 +13,6 @@ test('Testing result', () => {
     { name: 'мечник', health: 10 },
   ];
 
+  expect(sortByHealth(initialArray)).not.toBe(sortedArray);
   expect(sortByHealth(initialArray)).toEqual(sortedArray);
 });
